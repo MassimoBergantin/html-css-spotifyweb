@@ -18,8 +18,9 @@ footer{
 }
 .sidebar{
     background-color:black;
+    position: relative;
 }
-.sidebar img{
+#logo{
     height: 50px;
     position: fixed;
     top: 25px;
@@ -46,3 +47,47 @@ footer{
     height: 100%;
     overflow-y: scroll;
 }
+.logo-spoty {
+    width: 100%;
+    height: 100px;
+}
+.ul {
+    padding: 5px 0px 5px 15px;
+    list-style: none;
+}
+
+.li-side {
+    /* border-left: 2px solid green; */
+    padding: 10px;
+    /* color: grey; */
+}
+.playlist-title {
+    margin: 25px;
+}
+.fa-plus-square {
+    margin: 10px;
+}
+.profile {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 50%;
+    width: 80%;
+}
+.user {
+    bottom: 0;
+    display: inline-block;
+    padding: 10px;
+}
+.JD {
+    font-size: large;
+}
+.ul-main-title, .ul-tit {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+
