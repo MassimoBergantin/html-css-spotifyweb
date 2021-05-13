@@ -8,7 +8,6 @@ body{
 }
 
 main{
-    background-color: orange;
     height: calc(100vh - 90px); 
 }
 
@@ -89,5 +88,35 @@ footer{
     padding: 15px;
     margin: 0 auto;
 }
+.recent-play {
 
+}
+.popular-artist img{
+    border-radius: 200px;
 
+}
+.artwork {
+    width: 200px;
+    margin-top: 25px;
+    margin-right: 25px;
+ 
+}
+.main-section {
+    padding: 20px;
+}
+.title {
+    padding: 25px 0px 25px 0px;
+}
+.albums-box {
+    display: inline-block;
+    text-align: center;
+}
+.player-artwork img {
+    width: 50px;
+}
+.player-artwork {
+    width: auto;
+}
+.sinister-data {
+    float: left;
+}
