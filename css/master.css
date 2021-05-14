@@ -86,6 +86,9 @@ footer{
 .main-section {
     padding: 20px;
 }
+.main-section h3, .main-section p {
+    padding: 25px 0px 25px 0px;
+}
 .nav-main {
     margin-top: 100px;
 }
@@ -127,7 +130,7 @@ footer {
     justify-content: space-between;
 }
 [class*="foot-sides"] {
-    width: 200px;
+    width: 250px;
 }
 .player-buttons {
     display: flex;
