@@ -19,21 +19,21 @@
                     <img id="logo"src="./img/logo.svg" alt="logo"> 
                 </div>
                 <ul class="didebar-first ul">
-                    <li><i class="fas fa-home  li-side"> Home</i></li>
-                    <li><i class="fas fa-home li-side"> Cerca</i></li>
-                    <li><i class="fas fa-home li-side"> La tua libreria</i></li>
+                    <li class="li-side"><i class="fas fa-home"></i> Cerca</i></li>
+                    <li class="li-side"><i class="fas fa-search"></i> Cerca</i></li>
+                    <li class="li-side"><i class="fas fa-book-open"></i> La tua libreria</i></li>
                 </ul>
                 <h4 class="playlist-title">PLAYLIST</h4>
-                <ul class="sidebar-second ul">                    
-                    <i style="font-size: xx-large;" class="far fa-plus-square"></i> 
-                    <span style="vertical-align: 5px;">Crea Playlist</span>
+                <ul class="sidebar-second ul"> 
+                    <div class="crea-playlist">
+                        <span style="crea-playlist"><i style="font-size: xx-large;" class="far fa-plus-square"></i>Crea Playlist</span>
+                    </div>               
                     <li class="li-side">Nome Playlist</li>
                     <li class="li-side">Nome Playlist</li>
                     <li class="li-side">Nome Playlist</li>
                     <li class="li-side">Nome Playlist</li>
                     <li class="li-side">Nome Playlist</li>
-                    <li class="li-side">Nome Playlist</li>
-
+                    <li class="li-side">Nome Playlist</li>  
                 </ul>
                 <div class="profile">
                     <i style="font-size: 10px;" class="fas fa-arrow-circle-down"></i>
@@ -64,33 +64,34 @@
                     <div class="recently-played">
                         <h3>Recently played</h3>
                         <div class="recently-boxes-container">
-                            <div>
-                                <img src="img/metal_lifting.jpg" alt="">
+                            <div class="album-all-box">
+                                <img class="album-pic" src="img/metal_lifting.jpg" alt="">
+                                <i class="far fa-play-circle"></i>
                                 <h4>Heavy Metal</h4>
                                 <p>Subtitle</p>                             
-                            </div>
-                            <div>
-                                <img src="img/stranger.jpeg" alt="">
+                            </div> 
+                            <div class="album-all-box">
+                                <img class="album-pic" id="imgs" src="img/stranger.jpeg" alt="">
                                 <h4 style="width: 150px; margin: 0 auto;"> Stranger Things: volume 1 a (Netflix Original  series soundtrack)</h4>
                                 <p>Subtitle</p>                             
                             </div>
-                            <div>
-                                <img src="img/metal_lifting.jpg" alt="">
+                            <div class="album-all-box">
+                                <img class="album-pic"  src="img/split.jpeg" alt="">
                                 <h4>Heavy Metal</h4>
                                 <p>Subtitle</p>                             
                             </div>
-                            <div>
-                                <img src="img/metal_lifting.jpg" alt="">
+                            <div class="album-all-box">
+                                <img class="album-pic"  src="img/cure.jpeg" alt="">
                                 <h4>Heavy Metal</h4>
                                 <p>Subtitle</p>                             
                             </div>
-                            <div>
-                                <img src="img/metal_lifting.jpg" alt="">
+                            <div class="album-all-box">
+                                <img class="album-pic"  src="img/sinister.jpeg" alt="">
                                 <h4>Heavy Metal</h4>
                                 <p>Subtitle</p>                             
                             </div>
-                            <div>
-                                <img src="img/metal_lifting.jpg" alt="">
+                            <div class="album-all-box">
+                                <img class="album-pic"  src="img/aquietplace.jpeg" alt="">
                                 <h4>Heavy Metal</h4>
                                 <p>Subtitle</p>                             
                             </div>
@@ -105,11 +106,11 @@
                         <p>Più ascolti, più accurati saranno suggerimenti</p>
                         <div class="createdfor-boxes-container">
                             <div>
-                                <img src="img/radar.jpeg" alt="">
+                                <img class="album-pic"  src="img/radar.jpeg" alt="">
                                 <h4>Release Radar</h4>
                             </div>
                             <div>
-                                <img src="img/mixdaily.jpeg" alt="">
+                                <img class="album-pic"  src="img/mixdaily.jpeg" alt="">
                                 <h4>Daily Mix 1</h4>
                             </div>
                         </div>                    
@@ -120,11 +121,11 @@
                         <p>Più ascolti, più accurati saranno suggerimenti</p>
                         <div class="artist-boxes-container">
                             <div>
-                                <img src="img/youg.jpeg" alt="">
+                                <img class="album-pic"  src="img/youg.jpeg" alt="">
                                 <h4>Release Radar</h4>
                             </div>
                             <div>
-                                <img src="img/einaudi.jpeg" alt="">
+                                <img class="album-pic"  src="img/einaudi.jpeg" alt="">
                                 <h4>Daily Mix 1</h4>
                             </div>
                         </div>                    
@@ -140,7 +141,7 @@
                 </div> 
                 <div>
                     <h4>Sinister</h4>
-                    <p>Nome brano</p>
+                    <p class="song-name">Nome brano</p>
                 </div>
                 <div class="heart-folder">
                     <i class="far fa-heart"></i>
@@ -149,11 +150,11 @@
             </div>
             <div class="player-buttons">
                 <div style="width: 400px;" class="button-up">
-                    <i class="fas fa-random"></i>
-                    <i class="fas fa-step-backward"></i>
-                    <i style="font-size: 30px" class="far fa-play-circle"></i>
-                    <i class="fas fa-step-forward"></i>
-                    <i class="fas fa-redo"></i>
+                    <i class="fas fa-random button"></i>
+                    <i class="fas fa-step-backward button"></i>
+                    <i class="fas fa-play buttonP"></i>
+                    <i class="fas fa-step-forward button"></i>
+                    <i class="fas fa-redo button"></i>
                 </div>
                 <div class="button-down">
                     <span>0:25</span>
@@ -164,9 +165,9 @@
                 </div>
             </div>
             <div class="foot-sides player-volume">
-                <i class="fas fa-list"></i>
-                <i class="fas fa-desktop"></i>
-                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-list button"></i>
+                <i class="fas fa-desktop button"></i>
+                <i class="fas fa-volume-up button"></i>
                 <div class="volume-bar">
                     <input type="range" min="1" max="100" value="50">
                 </div>

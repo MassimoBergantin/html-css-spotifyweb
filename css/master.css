@@ -19,6 +19,8 @@ footer{
 .sidebar{
     background-color:black;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 #logo{
     height: 50px;
@@ -31,6 +33,9 @@ footer{
     height: 100px;
     background-color: #252525;
     position: fixed;
+}
+.upgrade:hover button {
+    cursor: pointer;
 
 }
 #push{
@@ -60,16 +65,29 @@ footer{
 .li-side {
     /* border-left: 2px solid green; */
     padding: 10px;
-    /* color: grey; */
+    color: grey;
+}
+.playlist-title:hover {
+    color: white;
+    font-size: larger;
+    text-decoration: underline;
+}
+.li-side:hover {
+    color: white;
+    font-size: larger;
+    cursor: pointer;
 }
 .playlist-title {
     margin: 25px;
+}
+.crea-playlist {
+    vertical-align: 25px;
 }
 .fa-plus-square {
     margin: 10px;
 }
 .profile {
-    position: absolute;
+    /* position: absolute; */
     margin-left: 25px;
     margin-top: 50%;
     width: 80%;
@@ -99,11 +117,16 @@ footer{
     list-style: none;
     padding: 5px;
     margin: 0 auto;
+    color: rgb(167, 166, 166);
+}
+.ul-main-title:hover {
+    color: white;
+    cursor: pointer;
+}
 }
 .recently-boxes-container div { 
     text-align: center;
     margin: 5px;
-    
 }
 .recently-boxes-container {
     display: flex;
@@ -125,12 +148,27 @@ footer{
     width: 250px;
 }
 /* FOOTER */
+.song-name:hover {
+    text-decoration: underline;
+}
 footer {
     display: flex;
     justify-content: space-between;
+    flex-grow: grow;
+}
+.fa-heart, .fa-folder {
+    color: darkgray;
+}
+.fa-folder:hover {
+    color: white;
+    
+}
+.fa-heart:hover {
+    color: white;
+
 }
 [class*="foot-sides"] {
-    width: 250px;
+    flex-basis: 250px;
 }
 .player-buttons {
     display: flex;
@@ -138,8 +176,7 @@ footer {
     width: 800px;
 }
 .button-up, .button-down {
-    width: 100%;
-    height: 50px; 
+    width: 100%;    
 }
 .player-datas {
     display: flex;
@@ -155,7 +192,7 @@ footer {
     justify-content: space-around;
     
 }
-/* SLIDER */
+/* SLIDER (FONTE W3SCHOOL) */
 .slider {
     -webkit-appearance: none;
     width: 100%;
@@ -166,7 +203,6 @@ footer {
     -webkit-transition: .2s;
     transition: opacity .2s;
 }
-  
 .slider:hover {
     opacity: 1;
 }
@@ -194,6 +230,34 @@ footer {
     padding: 15px;
     margin: 0 auto;
 }
+.buttonP:hover {
+    font-size: x-large;
+    cursor: pointer;
+}
+.button:hover {
+    font-size: larger;
+    cursor: pointer;
+}
 .player-buttons i {
     line-height: 20px;
+}
+.album-pic:hover {
+    filter: opacity(0.5);
+    cursor: pointer;
+}
+.fa-play-circle {
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    font-size: 100px;
+    display: none;
+}
+.album-all-box {
+    position: relative;
+    text-align: center;
+    margin-right: 10px;
+}
+.fa-play-circle:hover {
+    cursor: pointer;
+    display: block;
 }
