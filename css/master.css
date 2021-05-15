@@ -255,9 +255,10 @@ footer {
 .album-all-box {
     position: relative;
     text-align: center;
-    margin-right: 10px;
+    padding-right: 10px;
+    flex-basis: 150px;
 }
-.fa-play-circle:hover {
+.album-all-box:hover .fa-play-circle {
     cursor: pointer;
     display: block;
 }
